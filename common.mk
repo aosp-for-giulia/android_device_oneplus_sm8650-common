@@ -139,13 +139,6 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, vendor/sony/dolby/sonydolby.mk)
 
-# Doze
-ifneq ($(TARGET_IS_TABLET),true)
-PRODUCT_PACKAGES += \
-    OplusDoze \
-    OplusDozeResCommon
-endif
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -364,7 +357,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.multihal \
+    android.hardware.sensors-service.oplus-multihal \
     sensors.dynamic_sensor_hal \
     sensors.oplus
 
