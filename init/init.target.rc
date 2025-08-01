@@ -236,6 +236,11 @@ service fan_control_turn_off /vendor/bin/fan_service 0
     disabled
     oneshot
 
+on property:vendor.post_boot.parsed=1 
+    # dex2oat settings
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
+
 on property:debug.high_touch_rate=1
     setprop persist.vendor.high_touch_rate 1
     write /sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a90000.spi/spi_master/spi0/spi0.0/synaptics_tcm_hbp.0/high_rate 1
