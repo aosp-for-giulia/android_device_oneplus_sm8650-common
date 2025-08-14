@@ -60,4 +60,8 @@
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
     </string-array>
+
+    <!-- Enable UDFPS when the screen is off -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+    <bool name="config_screen_off_udfps_default_on">true</bool>
 </resources>
