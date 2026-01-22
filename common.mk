@@ -169,6 +169,9 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
 endif
 
+# GameBar Performance Overlay
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
 # GPS
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
