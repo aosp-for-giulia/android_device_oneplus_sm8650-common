@@ -1,0 +1,7 @@
+service health_restart_wait /vendor/bin/health_restart_wait.sh
+    class main
+    user root
+    seclabel u:r:vendor_init_health_restart_delay:s0
+
+on property:sys.boot_completed=1
+    start health_restart_wait

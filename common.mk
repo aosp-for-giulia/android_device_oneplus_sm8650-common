@@ -185,6 +185,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.health.fix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.health.fix.rc \
+    $(LOCAL_PATH)/configs/health_restart_wait.sh:$(TARGET_COPY_OUT_VENDOR)/bin/health_restart_wait.sh
 
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
