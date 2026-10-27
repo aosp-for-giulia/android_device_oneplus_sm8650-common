@@ -1844,5 +1844,15 @@
                         0x40808000, 1497000, 0x40808100, 1017000, 0x40808200, 633000, 0x40C00000, 2,
                         0x4303C000, 0xA6428, 0x43480000, 0x114900, 0x41848000, 0xE3C88"/>
 
+        <!-- Expensive Rendering -->
+        <!-- GPU - min clock 310 MHz -->
+        <Config
+            Id="0x000010A5" Enable="true" Timeout="0" Target="pineapple"
+            Resources="0x42830000, 310" />
+
+        <!-- GPU - min clock 255 MHz -->
+        <Config
+            Id="0x000010A5" Enable="true" Timeout="0" Target="cliffs"
+            Resources="0x42830000, 255" />
     </PerfBoost>
 </BoostConfigs>
