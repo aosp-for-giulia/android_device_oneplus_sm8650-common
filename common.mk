@@ -146,6 +146,9 @@ $(call inherit-product, vendor/sony/dolby/sonydolby.mk)
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Duck RKP
+PRODUCT_PACKAGES += duck_rkp
+
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 

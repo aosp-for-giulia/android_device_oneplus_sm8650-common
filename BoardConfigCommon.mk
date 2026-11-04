@@ -63,6 +63,10 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 TARGET_NEEDS_DTBOIMAGE := true
 
+# Duck RKP
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/oneplus/sm8650-common/duck-rkp/compatibility_matrix.xml
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
